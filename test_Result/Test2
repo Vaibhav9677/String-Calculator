@@ -64,3 +64,29 @@ Test run finished after 142 ms
 [         2 tests successful      ]
 [         0 tests failed          ]
 
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m│  └─[0m [36mStringCalculatorTest[0m [32m✔[0m
+[36m│     ├─[0m [34mString with number 1 and 2[0m [32m✔[0m
+[36m│     ├─[0m [34mEmpty string should return 0[0m [32m✔[0m
+[36m│     └─[0m [34mUnknown amount of numbers should be summed[0m [32m✔[0m
+[36m├─[0m [36mJUnit Vintage[0m [32m✔[0m
+[36m└─[0m [36mJUnit Platform Suite[0m [32m✔[0m
+
+Test run finished after 148 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         3 tests found           ]
+[         0 tests skipped         ]
+[         3 tests started         ]
+[         0 tests aborted         ]
+[         3 tests successful      ]
+[         0 tests failed          ]
+
