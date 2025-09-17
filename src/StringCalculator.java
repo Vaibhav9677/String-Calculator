@@ -5,13 +5,20 @@ import java.util.List;
 public class StringCalculator {
 
     int sum;
+    public static int count = 0;
 
     public StringCalculator()
     {
         this.sum = 0;
     }
 
+    public int GetCalledCount(){
+        return count;
+    }
+
     public int add(String numbers) {   
+    
+        count++;
         //numbers (string) is empty or null
         if (numbers == null || numbers.isEmpty()) {
             return 0;

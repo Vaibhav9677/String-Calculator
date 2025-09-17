@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class StringCalculatorTest {
 
+    int icount = 0;
+
     @Test
     @DisplayName("Empty string should return 0")
     void testEmptyString() {
@@ -61,5 +63,13 @@ public class StringCalculatorTest {
         });
 
         assertEquals("negatives not allowed: -2,-4,-6", exception.getMessage());
+    }
+
+    @Test
+    @DisplayName("how many times Add() was invoked")
+    void testCountaddinvked() {
+        StringCalculator sc = new StringCalculator();
+        icount = StringCalculator.count;
+        assertEquals(icount, sc.GetCalledCount());
     }
 }
