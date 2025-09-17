@@ -1,0 +1,73 @@
+
+---------------------------------------------------------------------------------------------------------------------
+Failed test no 4 :
+---------------------------------------------------------------------------------------------------------------------
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m│  └─[0m [36mStringCalculatorTest[0m [32m✔[0m
+[36m│     ├─[0m [31mCustom delimiter should be supported[0m [31m✘[0m [31mFor input string: "//;"[0m
+[36m│     ├─[0m [34mString with number 1 and 2[0m [32m✔[0m
+[36m│     ├─[0m [34mNumbers separated by newlines should be summed[0m [32m✔[0m
+[36m│     ├─[0m [34mEmpty string should return 0[0m [32m✔[0m
+[36m│     └─[0m [34mUnknown amount of numbers should be summed[0m [32m✔[0m
+[36m├─[0m [36mJUnit Vintage[0m [32m✔[0m
+[36m└─[0m [36mJUnit Platform Suite[0m [32m✔[0m
+
+Failures (1):
+  JUnit Jupiter:StringCalculatorTest:Custom delimiter should be supported
+    MethodSource [className = 'StringCalculatorTest', methodName = 'testCustomDelimiter', methodParameterTypes = '']
+    => java.lang.NumberFormatException: For input string: "//;"
+       java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+       java.base/java.lang.Integer.parseInt(Integer.java:654)
+       java.base/java.lang.Integer.parseInt(Integer.java:786)
+       StringCalculator.add(StringCalculator.java:22)
+       StringCalculatorTest.testCustomDelimiter(StringCalculatorTest.java:39)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+       java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+       java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+Test run finished after 157 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         5 tests found           ]
+[         0 tests skipped         ]
+[         5 tests started         ]
+[         0 tests aborted         ]
+[         4 tests successful      ]
+[         1 tests failed          ]
+
+---------------------------------------------------------------------------------------------------------------------
+pass test no 4 :
+---------------------------------------------------------------------------------------------------------------------
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m│  └─[0m [36mStringCalculatorTest[0m [32m✔[0m
+[36m│     ├─[0m [34mCustom delimiter should be supported[0m [32m✔[0m
+[36m│     ├─[0m [34mString with number 1 and 2[0m [32m✔[0m
+[36m│     ├─[0m [34mNumbers separated by newlines should be summed[0m [32m✔[0m
+[36m│     ├─[0m [34mEmpty string should return 0[0m [32m✔[0m
+[36m│     └─[0m [34mUnknown amount of numbers should be summed[0m [32m✔[0m
+[36m├─[0m [36mJUnit Vintage[0m [32m✔[0m
+[36m└─[0m [36mJUnit Platform Suite[0m [32m✔[0m
+
+Test run finished after 143 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         5 tests found           ]
+[         0 tests skipped         ]
+[         5 tests started         ]
+[         0 tests aborted         ]
+[         5 tests successful      ]
+[         0 tests failed          ]
+

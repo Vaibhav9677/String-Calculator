@@ -14,8 +14,18 @@ public class StringCalculator {
         if (numbers == null || numbers.isEmpty()) {
             return 0;
         }
-        // Split by comma OR newline
-        String[] parts = numbers.split("[,\n]");
+
+        String delimiter = "[,\n]"; // default delimiters
+
+        // Check if custom delimiter is defined
+        if (numbers.startsWith("//")) {
+            int newlineIndex = numbers.indexOf("\n");
+            delimiter = numbers.substring(2, newlineIndex); // get custom delimiter
+            numbers = numbers.substring(newlineIndex + 1);   // rest of string
+        }
+
+        // Split using either default or custom delimiter
+        String[] parts = numbers.split(delimiter);
 
         for (String part : parts) {
             if (!part.trim().isEmpty()) {
