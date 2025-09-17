@@ -72,4 +72,11 @@ public class StringCalculatorTest {
         icount = StringCalculator.count;
         assertEquals(icount, sc.GetCalledCount());
     }
+
+    @Test
+    @DisplayName("Numbers bigger than 1000 should be ignored")
+    void testNumberBiggerthan1000Ignore() {
+        StringCalculator sc = new StringCalculator();
+        assertEquals(2, sc.add("//,\n1001,2"));
+    }
 }

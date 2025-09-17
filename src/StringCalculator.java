@@ -43,6 +43,10 @@ public class StringCalculator {
                 if (value < 0) {
                     negatives.add(value);
                 }
+                else if(value > 1000)
+                {
+                    continue;
+                }
                 sum += value;
             }
         }
