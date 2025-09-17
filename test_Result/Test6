@@ -1,0 +1,77 @@
+
+--------------------------------------------------------------------------------------------------------
+Faild Test 6 : 
+--------------------------------------------------------------------------------------------------------
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m│  └─[0m [36mStringCalculatorTest[0m [32m✔[0m
+[36m│     ├─[0m [34mCustom delimiter should be supported[0m [32m✔[0m
+[36m│     ├─[0m [31mNegative number should throw exception with message[0m [31m✘[0m [31mExpected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.[0m
+[36m│     ├─[0m [34mString with number 1 and 2[0m [32m✔[0m
+[36m│     ├─[0m [34mNumbers separated by newlines should be summed[0m [32m✔[0m
+[36m│     ├─[0m [34mEmpty string should return 0[0m [32m✔[0m
+[36m│     └─[0m [34mUnknown amount of numbers should be summed[0m [32m✔[0m
+[36m├─[0m [36mJUnit Vintage[0m [32m✔[0m
+[36m└─[0m [36mJUnit Platform Suite[0m [32m✔[0m
+
+Failures (1):
+  JUnit Jupiter:StringCalculatorTest:Negative number should throw exception with message
+    MethodSource [className = 'StringCalculatorTest', methodName = 'testNegativeNumberThrowsException', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+       org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+       org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+       org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+       org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+       StringCalculatorTest.testNegativeNumberThrowsException(StringCalculatorTest.java:47)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+       java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+       java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+Test run finished after 175 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         6 tests found           ]
+[         0 tests skipped         ]
+[         6 tests started         ]
+[         0 tests aborted         ]
+[         5 tests successful      ]
+[         1 tests failed          ]
+
+--------------------------------------------------------------------------------------------------------
+Passed Test 6 : 
+--------------------------------------------------------------------------------------------------------
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m│  └─[0m [36mStringCalculatorTest[0m [32m✔[0m
+[36m│     ├─[0m [34mCustom delimiter should be supported[0m [32m✔[0m
+[36m│     ├─[0m [34mMultiple negatives should show all in exception message[0m [32m✔[0m
+[36m│     ├─[0m [34mNegative number should throw exception with message[0m [32m✔[0m
+[36m│     ├─[0m [34mString with number 1 and 2[0m [32m✔[0m
+[36m│     ├─[0m [34mNumbers separated by newlines should be summed[0m [32m✔[0m
+[36m│     ├─[0m [34mEmpty string should return 0[0m [32m✔[0m
+[36m│     └─[0m [34mUnknown amount of numbers should be summed[0m [32m✔[0m
+[36m├─[0m [36mJUnit Vintage[0m [32m✔[0m
+[36m└─[0m [36mJUnit Platform Suite[0m [32m✔[0m
+
+Test run finished after 153 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         7 tests found           ]
+[         0 tests skipped         ]
+[         7 tests started         ]
+[         0 tests aborted         ]
+[         7 tests successful      ]
+[         0 tests failed          ]
+

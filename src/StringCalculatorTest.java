@@ -38,4 +38,28 @@ public class StringCalculatorTest {
         StringCalculator sc = new StringCalculator();
         assertEquals(3, sc.add("//;\n1;2")); // using ; as delimiter
     }
+
+    @Test
+    @DisplayName("Negative number should throw exception with message")
+    void testNegativeNumberThrowsException() {
+        StringCalculator sc = new StringCalculator();
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            sc.add("1,-2,3");
+        });
+
+        assertEquals("negatives not allowed: -2", exception.getMessage());
+    }
+
+    @Test
+    @DisplayName("Multiple negatives should show all in exception message")
+    void testMultipleNegativesThrowsException() {
+        StringCalculator sc = new StringCalculator();
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            sc.add("1,-2,-4,5,-6");
+        });
+
+        assertEquals("negatives not allowed: -2,-4,-6", exception.getMessage());
+    }
 }
