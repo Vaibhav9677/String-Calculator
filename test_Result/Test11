@@ -1,0 +1,85 @@
+-------------------------------------------------------------------------------------------------------
+Failed Test 11 :
+-------------------------------------------------------------------------------------------------------
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m│  └─[0m [36mStringCalculatorTest[0m [32m✔[0m
+[36m│     ├─[0m [34mCustom delimiter should be supported[0m [32m✔[0m
+[36m│     ├─[0m [34mMultiple negatives should show all in exception message[0m [32m✔[0m
+[36m│     ├─[0m [34mDelimiter of any length should be supported[0m [32m✔[0m
+[36m│     ├─[0m [31mMultiple delimiters should be supported[0m [31m✘[0m [31mFor input string: "1*2%3"[0m
+[36m│     ├─[0m [34mNegative number should throw exception with message[0m [32m✔[0m
+[36m│     ├─[0m [34mString with number 1 and 2[0m [32m✔[0m
+[36m│     ├─[0m [34mNumbers separated by newlines should be summed[0m [32m✔[0m
+[36m│     ├─[0m [34mhow many times Add() was invoked[0m [32m✔[0m
+[36m│     ├─[0m [34mEmpty string should return 0[0m [32m✔[0m
+[36m│     ├─[0m [34mNumbers bigger than 1000 should be ignored[0m [32m✔[0m
+[36m│     └─[0m [34mUnknown amount of numbers should be summed[0m [32m✔[0m
+[36m├─[0m [36mJUnit Vintage[0m [32m✔[0m
+[36m└─[0m [36mJUnit Platform Suite[0m [32m✔[0m
+
+Failures (1):
+  JUnit Jupiter:StringCalculatorTest:Multiple delimiters should be supported
+    MethodSource [className = 'StringCalculatorTest', methodName = 'testMultipleDelimiters', methodParameterTypes = '']
+    => java.lang.NumberFormatException: For input string: "1*2%3"
+       java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+       java.base/java.lang.Integer.parseInt(Integer.java:668)
+       java.base/java.lang.Integer.parseInt(Integer.java:786)
+       StringCalculator.add(StringCalculator.java:43)
+       StringCalculatorTest.testMultipleDelimiters(StringCalculatorTest.java:94)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+       java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+       java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+Test run finished after 183 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[        11 tests found           ]
+[         0 tests skipped         ]
+[        11 tests started         ]
+[         0 tests aborted         ]
+[        10 tests successful      ]
+[         1 tests failed          ]
+
+-------------------------------------------------------------------------------------------------------
+Pass Test 11 :
+-------------------------------------------------------------------------------------------------------
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m│  └─[0m [36mStringCalculatorTest[0m [32m✔[0m
+[36m│     ├─[0m [34mCustom delimiter should be supported[0m [32m✔[0m
+[36m│     ├─[0m [34mMultiple negatives should show all in exception message[0m [32m✔[0m
+[36m│     ├─[0m [34mDelimiter of any length should be supported[0m [32m✔[0m
+[36m│     ├─[0m [34mMultiple delimiters should be supported[0m [32m✔[0m
+[36m│     ├─[0m [34mNegative number should throw exception with message[0m [32m✔[0m
+[36m│     ├─[0m [34mString with number 1 and 2[0m [32m✔[0m
+[36m│     ├─[0m [34mNumbers separated by newlines should be summed[0m [32m✔[0m
+[36m│     ├─[0m [34mhow many times Add() was invoked[0m [32m✔[0m
+[36m│     ├─[0m [34mEmpty string should return 0[0m [32m✔[0m
+[36m│     ├─[0m [34mNumbers bigger than 1000 should be ignored[0m [32m✔[0m
+[36m│     └─[0m [34mUnknown amount of numbers should be summed[0m [32m✔[0m
+[36m├─[0m [36mJUnit Vintage[0m [32m✔[0m
+[36m└─[0m [36mJUnit Platform Suite[0m [32m✔[0m
+
+Test run finished after 161 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[        11 tests found           ]
+[         0 tests skipped         ]
+[        11 tests started         ]
+[         0 tests aborted         ]
+[        11 tests successful      ]
+[         0 tests failed          ]
+

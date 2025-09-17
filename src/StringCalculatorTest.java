@@ -79,4 +79,27 @@ public class StringCalculatorTest {
         StringCalculator sc = new StringCalculator();
         assertEquals(2, sc.add("//,\n1001,2"));
     }
+
+    @Test
+    @DisplayName("Delimiter of any length should be supported")
+    void testMultiCharacterDelimiter() {
+    StringCalculator sc = new StringCalculator();
+    assertEquals(6, sc.add("//[***]\n1***2***3"));
+    }
+
+    @Test
+    @DisplayName("Multiple delimiters should be supported")
+    void testMultipleDelimiters() {
+        StringCalculator sc = new StringCalculator();
+        assertEquals(6, sc.add("//[*][%]\n1*2%3"));
+    }
+
+    @Test
+    @DisplayName("Multiple delimiters with length longer than one char should be supported")
+    void testMultipleMultiCharDelimiters() {
+        StringCalculator sc = new StringCalculator();
+        assertEquals(15, sc.add("//[###][@@]\n4###5@@6"));
+        assertEquals(6, sc.add("//[**][%%]\n1**2%%3"));
+        
+    }
 }
