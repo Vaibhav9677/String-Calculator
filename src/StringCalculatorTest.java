@@ -10,4 +10,11 @@ public class StringCalculatorTest {
         StringCalculator sc = new StringCalculator();
         assertEquals(0, sc.add(""));
     }
+
+    @Test
+    @DisplayName("String with number 1 and 2")
+    void testStringWith1_2Number() {
+        StringCalculator sc = new StringCalculator();
+        assertEquals(3, sc.add("1,2"));
+    }
 }
